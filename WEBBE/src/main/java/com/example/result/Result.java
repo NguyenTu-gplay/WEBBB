@@ -26,7 +26,9 @@ public class Result {
 	   
 	   @Column(name="total_question")
 	   private String totalQuestion;
-	   
+
+	   @Column(name = "total_time")
+	   private int total_time;
 	   @ManyToOne
 	   @JoinColumn(name= "exam_name")
 	   private Subject sname;
@@ -82,6 +84,9 @@ public class Result {
 	public String getTotalQuestion() {
 		return totalQuestion;
 	}
+	public int getTotalTime() {
+		return total_time;
+	}
 
 	public void setTotalQuestion(String totalQuestion) {
 		this.totalQuestion = totalQuestion;
@@ -110,7 +115,10 @@ public class Result {
 	public void setExamId(Exam examId) {
 		this.examId = examId;
 	}
-	   
+	public void setTotalTime(int time) {
+		this.total_time = time;
+	}
+
 	   
 	   
 	   

@@ -30,6 +30,11 @@ public class Exam {
 	 
 	 @Column(name="exam_level")
      private String level;
+
+
+
+	@Column(name="total_time")
+	 private int total_time;
 	 
 //	 @OneToMany(mappedBy="ename")
 //	 private List<Question> question;
@@ -96,6 +101,12 @@ public class Exam {
 
 	public void setLevel(String level) {
 		this.level = level;
+	}
+	public int getTotalTime() {
+		return total_time;
+	}
+	public void setTotalTime(int total_time) {
+		this.total_time = total_time;
 	}
 	
 	
